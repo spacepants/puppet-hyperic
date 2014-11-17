@@ -10,7 +10,7 @@ class hyperic::params {
       $agent_user      = 'hyperic'
       $agent_version   = 'latest'
       $enable_repo     = true
-      $java_home       = '/usr/lib/jvm/jre/'
+      $java_home       = '/usr/lib/jvm/jre'
       $manage_repo     = true
       $package_name    = 'vfabric-hyperic-agent'
       $repo_path       = 'http://repo.vmware.com/pub/'
