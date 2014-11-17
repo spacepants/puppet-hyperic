@@ -7,6 +7,7 @@
   "source": "git://github.com/spacepants/puppet-hyperic",
   "project_page": "https://github.com/spacepants/puppet-hyperic",
   "issues_url": "https://github.com/spacepants/puppet-hyperic/issues",
+  "tags": ["vmware", "vfabric", "vcenter", "hyperic"],
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
