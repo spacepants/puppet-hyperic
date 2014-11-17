@@ -4,9 +4,33 @@
   "author": "Paul Bailey",
   "summary": "Module for installing and managing VMWare vFabric Hyperic agent",
   "license": "Apache 2.0",
-  "source": "",
-  "project_page": "",
-  "issues_url": "",
+  "source": "git://github.com/spacepants/puppet-hyperic",
+  "project_page": "https://github.com/spacepants/puppet-hyperic",
+  "issues_url": "https://github.com/spacepants/puppet-hyperic/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6"
+      ]
+    },{
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },{
+      "name": "puppet",
+      "version_requirement": ">=2.7 <4.0"
+    }
+  ],
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",

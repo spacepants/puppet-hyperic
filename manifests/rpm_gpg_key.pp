@@ -1,6 +1,6 @@
 # == Define hyperic::rpm_gpg_key
 #
-# This define imports the RPM GPG keys for vFabric
+# This define is a repurposed version of stahma's epel beauty and imports the RPM GPG keys for vFabric
 #
 # === Parameters
 #
