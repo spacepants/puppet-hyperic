@@ -12,6 +12,7 @@
 6. [Development - Guide for contributing to the module](#development)
 
 ## Overview
+[![Build Status](https://secure.travis-ci.org/spacepants/puppet-hyperic.svg)](https://travis-ci.org/spacepants/puppet-hyperic)
 
 A one-maybe-two sentence summary of what the module does/what problem it solves. This is your 30 second elevator pitch for your module. Consider including OS/Puppet version it works with.
 
