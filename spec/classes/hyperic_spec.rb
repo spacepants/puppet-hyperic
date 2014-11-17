@@ -113,10 +113,6 @@ describe 'hyperic' do
         let(:params) {{ 'server_ip' => '1.2.3.4' }}
         it { should contain_file('/opt/hyperic/hyperic-hqee-agent/conf/agent.properties').with_content(/agent.setup.camIP=1.2.3.4/) }
       end
-      context 'server ip' do
-        let(:params) {{ 'server_ip' => '1.2.3.4' }}
-        it { should contain_file('/opt/hyperic/hyperic-hqee-agent/conf/agent.properties').with_content(/agent.setup.camIP=1.2.3.4/) }
-      end
       context 'server login' do
         let(:params) {{ 'server_login' => 'customhquser' }}
         it { should contain_file('/opt/hyperic/hyperic-hqee-agent/conf/agent.properties').with_content(/agent.setup.camLogin=customhquser/) }

@@ -27,7 +27,10 @@ class hyperic (
   $vfabric_version = $::hyperic::params::vfabric_version,
 ) inherits ::hyperic::params {
 
-  # validate parameters here
+  validate_bool($enable_repo)
+  validate_bool($manage_repo)
+  validate_string($agent_version)
+  validate_string($vfabric_version)
 
   class { '::hyperic::repo': } ->
   class { '::hyperic::install': } ->
