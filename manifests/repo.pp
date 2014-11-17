@@ -21,7 +21,6 @@ class hyperic::repo {
         }
         if $::hyperic::enable_repo {
           yumrepo { 'vfabric':
-            ensure   => present,
             descr    => "VMWare vFabric ${::hyperic::vfabric_version} - \$basearch",
             enabled  => '1',
             gpgcheck => '1',
@@ -30,7 +29,6 @@ class hyperic::repo {
           }
         } else {
           yumrepo { 'vfabric':
-            ensure   => present,
             descr    => "VMWare vFabric ${::hyperic::vfabric_version} - \$basearch",
             enabled  => '0',
             gpgcheck => '1',
@@ -53,7 +51,6 @@ class hyperic::repo {
         }
         if $::hyperic::enable_repo {
           yumrepo { 'vfabric':
-            ensure   => present,
             descr    => "VMWare vFabric ${::hyperic::vfabric_version} - \$basearch",
             enabled  => '1',
             gpgcheck => '1',
@@ -62,7 +59,6 @@ class hyperic::repo {
           }
         } else {
           yumrepo { 'vfabric':
-            ensure   => present,
             descr    => "VMWare vFabric ${::hyperic::vfabric_version} - \$basearch",
             enabled  => '0',
             gpgcheck => '1',
