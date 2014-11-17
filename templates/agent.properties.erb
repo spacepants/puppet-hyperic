@@ -1,0 +1,39 @@
+#
+# This file is managed by Puppet and local changes may be overwritten
+#
+agent.setup.camIP=<%= @server_ip %>
+agent.setup.camPort=<%= @server_port %>
+agent.setup.camSSLPort=<%= @server_ssl_port %>
+agent.setup.camSecure=<%= @server_secure %>
+agent.setup.camLogin=<%= @server_login %>
+agent.setup.camPword=ENC(<%= @server_enc_pw %>)
+agent.setup.agentIP=*default*
+agent.setup.agentPort=*default*
+agent.setup.acceptUnverifiedCertificate=yes
+agent.setup.unidirectional=no
+sigar.mirror.procnet=true
+agent.logFile=${agent.logDir}/agent.log
+agent.logLevel=INFO
+log4j.rootLogger=${agent.logLevel}, R
+log4j.appender.R.File=${agent.logFile}
+log4j.appender.R.MaxBackupIndex=1
+log4j.appender.R.MaxFileSize=5000KB
+log4j.appender.R.layout.ConversionPattern=%d{dd-MM-yyyy HH:mm:ss,SSS z} %-5p [%t] [%c{1}@%L] %m%n
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R=org.apache.log4j.RollingFileAppender
+agent.logLevel.SystemErr=ERROR
+agent.logLevel.SystemOut=INFO
+log4j.logger.org.apache.http=ERROR
+log4j.logger.org.springframework.web.client.RestTemplate=ERROR
+log4j.logger.org.hyperic.hq.measurement.agent.server.SenderThread=INFO
+log4j.logger.org.hyperic.hq.agent.server.AgentDListProvider=INFO
+log4j.logger.org.hyperic.hq.agent.server.MeasurementSchedule=INFO
+log4j.logger.org.hyperic.util.units=INFO
+log4j.logger.org.hyperic.hq.product.pluginxml=INFO
+log4j.category.org.jnp.interfaces.NamingContext=ERROR
+log4j.category.org.apache.axis=ERROR
+autoinventory.runtimeScan.interval.millis=86400000
+hq.plugins.responsetime.disable=true
+accept.unverified.certificates=false
+hq.plugins.configmon.maxdiff=5120
+scheduleThread.poolsize.vsphere=2

@@ -1,0 +1,10 @@
+name          'spacepants-hyperic'
+version       '0.1.0'
+source        ''
+author        'Paul Bailey'
+license       'Apache 2.0'
+summary       'Module for installing and managing VMWare vFabric Hyperic agent'
+description   ''
+project_page  ''
+
+dependency 'puppetlabs/stdlib'
