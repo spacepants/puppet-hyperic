@@ -1,3 +1,5 @@
+# Hyperic Puppet Module [![Build Status](https://secure.travis-ci.org/spacepants/puppet-hyperic.svg)](https://travis-ci.org/spacepants/puppet-hyperic)
+
 #### Table of Contents
 
 1. [Overview](#overview)
@@ -12,7 +14,6 @@
 6. [Development - Guide for contributing to the module](#development)
 
 ## Overview
-[![Build Status](https://secure.travis-ci.org/spacepants/puppet-hyperic.svg)](https://travis-ci.org/spacepants/puppet-hyperic)
 
 Puppet module for installing, configuring, and managing [VMWare's Hyperic OS & application monitoring agent](http://www.vmware.com/products/vrealize-hyperic) from the [official VMWare repository](http://repo.vmware.com/pub/).
 
@@ -42,7 +43,9 @@ You'll need your preferred distro of Java on the machine. While it isn't a direc
 
 By default, the Hyperic installer encrypts the agent password on first startup. By preencrypting both the password value in agent.properties and the key in agent.scu, we can ensure a stable value that puppet can manage. The included default parameters will set the password to its default of "hqadmin". To set this to the password for your server, you can either run
 
-    ./bin/hq-agent.sh set-property agent.setup.camPword your-password-here
+```shell
+./bin/hq-agent.sh set-property agent.setup.camPword your-password-here
+```
 
 which will encrypt the appropriate values in agent.properties and agent.scu. Or you can just copy over values from one of your currently installed and configured machines.
 
