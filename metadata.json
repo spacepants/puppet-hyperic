@@ -1,6 +1,6 @@
 {
   "name": "spacepants-hyperic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Paul Bailey",
   "summary": "Module for installing and managing VMWare vFabric Hyperic agent",
   "license": "Apache 2.0",
