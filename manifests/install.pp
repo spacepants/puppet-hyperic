@@ -6,11 +6,12 @@ class hyperic::install {
     system => true,
   }
   user { $::hyperic::agent_user:
-    ensure => present,
-    system => true,
-    home   => '/opt/hyperic',
-    shell  => '/sbin/nologin',
-    gid    => 'vfabric'
+    ensure  => present,
+    system  => true,
+    home    => '/opt/hyperic',
+    shell   => '/sbin/nologin',
+    gid     => 'vfabric',
+    require => Group['vfabric']
   }
   if $::hyperic::enable_repo {
     package { $::hyperic::package_name:
