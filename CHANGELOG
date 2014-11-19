@@ -1,2 +1,5 @@
+2014-11-19 Release 0.1.1
+- updated default $JAVA_HOME param to '/etc/alternatives/jre'
+- dependency fix for user group
 2014-11-17 Release 0.1.0
 - initial release of the module
