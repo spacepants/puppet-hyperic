@@ -1,4 +1,5 @@
-# Hyperic Puppet Module [![Build Status](https://secure.travis-ci.org/spacepants/puppet-hyperic.svg)](https://travis-ci.org/spacepants/puppet-hyperic)
+# Hyperic Puppet Module
+[![Build Status](https://secure.travis-ci.org/spacepants/puppet-hyperic.svg)](https://travis-ci.org/spacepants/puppet-hyperic)
 
 #### Table of Contents
 
@@ -125,6 +126,6 @@ This module currently only works with vFabric version 5.1, 5.2, and 5.3 on RedHa
 
 ## Development
 
-If you'd like to other features or anythign else, check out the contributing guidelines in CONTRIBUTING.md.
+If you'd like to other features or anything else, check out the contributing guidelines in CONTRIBUTING.md.
 
 
